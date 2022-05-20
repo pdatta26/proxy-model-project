@@ -44,7 +44,7 @@ The concept of proxy model is making replica of a model.
    be created into <b>Honda</b> proxy model, and which containing model field value as "PrivetCar", Their replica will 
    be created into <b>PrivetCar</b> proxy model.
    <br>
-   <i><b> Source code: </b></i>
+   <i><b> Source code: </b></i><br>
    ```
     class HondaManager(models.Manager):
         def get_queryset(self):
