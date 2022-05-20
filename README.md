@@ -1,4 +1,5 @@
 # Proxy Model Project
+![Proxy Model](https://github.com/pdatta26/proxy-model-project/blob/master/proxysql.jpg)
 
 In this proxy I have used django roxy model.
 The concept of proxy model is making replica of a model.
