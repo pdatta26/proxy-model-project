@@ -45,34 +45,35 @@ The concept of proxy model is making replica of a model.
    be created into <b>PrivetCar</b> proxy model.
    <br>
    <i><b> Source code: </b></i><br>
-   ```
-    class HondaManager(models.Manager):
-        def get_queryset(self):
-            return super().get_queryset().filter(model="Honda")
+   
+    ```
+       class HondaManager(models.Manager):
+           def get_queryset(self):
+               return super().get_queryset().filter(model="Honda")
 
 
-    class PrivetCarManager(models.Manager):
-        def get_queryset(self):
-            return super().get_queryset().filter(model="PrivetCar")
-   ```
+       class PrivetCarManager(models.Manager):
+           def get_queryset(self):
+               return super().get_queryset().filter(model="PrivetCar")
+    ```
    
    3. After that call the new created manager from your proxy model.
-5. How to call a manager from proxy model.<br>
-   In may case<br>
-   <i><b> Source code: </b></i>
-   ```
-    class Honda(Car):
-        objects = HondaManager()
+   4. How to call a manager from proxy model.<br>
+      In may case<br>
+      <i><b> Source code: </b></i>
+      ```
+       class Honda(Car):
+           objects = HondaManager()
 
-        class Meta:
-            proxy = True
+           class Meta:
+               proxy = True
 
 
-    class PrivetCar(Car):
-        objects = PrivetCarManager()
+       class PrivetCar(Car):
+           objects = PrivetCarManager()
 
-        class Meta:
-            proxy = True
-   ```
+           class Meta:
+               proxy = True
+      ```
    
-   Congratulations, You are done with proxy model.
+      Congratulations, You are done with proxy model.
