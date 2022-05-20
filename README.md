@@ -55,6 +55,7 @@ The concept of proxy model is making replica of a model.
         def get_queryset(self):
             return super().get_queryset().filter(model="PrivetCar")
    ```
+   
    3. After that call the new created manager from your proxy model.
 5. How to call a manager from proxy model.<br>
    In may case<br>
