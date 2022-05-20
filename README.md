@@ -1,6 +1,7 @@
 # Proxy Model Project
-![Proxy Model](https://github.com/pdatta26/proxy-model-project/blob/master/proxysql.jpg)
-
+<p align="center">
+  <img src="https://github.com/pdatta26/proxy-model-project/blob/master/proxysql.jpg" width="350" alt="Proxy Model   ">
+</p>
 In this proxy I have used django roxy model.
 The concept of proxy model is making replica of a model.
 
